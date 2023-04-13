@@ -23,16 +23,16 @@ public class Product {
     private String description;
     @Column(name = "unit_price")
     private BigDecimal unitPrice;
-    @Column(name = "url")
+    @Column(name = "image_url")
     private String imageUrl;
     @Column(name = "active")
     private Boolean active;
-    @Column(name = "stock")
+    @Column(name = "units_in_stock")
     private int unitStock;
-    @Column(name = "created_at")
+    @Column(name = "date_created")
     @CreationTimestamp
     private Date dateCreated;
-    @Column(name = "updated_at")
+    @Column(name = "last_updated")
     @UpdateTimestamp
     private Date dateUpdated;
     @ManyToOne
